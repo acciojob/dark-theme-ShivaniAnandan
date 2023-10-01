@@ -1,13 +1,10 @@
-//your code here
 function swapTheme(){
-	const toggle = "true";
-	if(toggle){
-		document.getElementById("app").classList.add("night");
-		document.getElementById("swap").classList.add("button_night");
-		toggle="false"
-	}
-	else{
-		document.getElementById("app").classList.remove("night");
-		document.getElementById("swap").classList.remove("button_night");
-	}
+	const app = document.getElementById("app");
+	const swap = document.getElementById("swap");
+
+	app.classList.toggle("day");
+	app.classList.toggle("night");
+
+	swap.classList.toggle("button_day");
+	swap.classList.toggle("button_night");
 }
